@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        .buttonAdd {
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 10pt;
+            padding: 12px 25px;
+            text-align: center;
+            font-size: 15px;
+            cursor: pointer;
+            float: left;
+        }
+
+        div {
+            width: 200px;
+            height: 60px;
+        }
+
+        .aEdit {
+            color: green;
+            cursor: pointer;
+        }
+
+        .aDelete {
+            color: darkred;
+            cursor: pointer;
+        }
+
+        table {
+            border: 5px solid dimgray;
+            border-radius: 12px;
+
+        }
+
+        th {
+            border: 3px solid dimgray;
+            background-color: darkgoldenrod;
+            font-size: 25px;
+            padding: 6px;
+        }
+
+        td {
+            border: 1px solid dimgray;
+            text-align: center;
+            font-size: 18px;
+            padding: 6px;
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <title>Drivers</title>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="startpage.html" title="Back to start page">Start page</a> |
+        <a href="transports.html" title="go to transports">Transports</a>
+    </nav>
+
+
+    <h1>Drivers</h1>
+
+    <div>
+        <a href="driver_edit.html">
+            <button class="buttonAdd" type="submit">Add new driver</button>
+        </a>
+    </div>
+
+</header>
+
+<section>
+    <table>
+        <thead>
+        <tr>
+            <th>Personnel Number</th>
+            <th>Full Name</th>
+            <th>Address</th>
+            <th>Birth Date</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+            <td>433432</td>
+            <td>Artsiom Prokharau</td>
+            <td>Brest st. Pokrovskaya 8</td>
+            <td>17.07.1992</td>
+            <td>
+                <a class="aEdit" href="driver_edit.html">Edit</a>
+                <a class="aDelete" href="#">Delete</a>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>32213</td>
+            <td>Dmitriy Ivanov</td>
+            <td>Minsk st. Borodina 12/4</td>
+            <td>12.11.1978</td>
+            <td>
+                <a class="aEdit" href="driver_edit.html">Edit</a>
+                <a class="aDelete" href="#">Delete</a>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>2322</td>
+            <td>Sergey Pohanenko</td>
+            <td>Pinsk st. Rosinka 23</td>
+            <td>11.02.1991</td>
+            <td>
+                <a class="aEdit" href="driver_edit.html">Edit</a>
+                <a class="aDelete" href="#">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<footer>
+    <hr/>
+    <p>&copy;Created by Artsiom Prokharau 2021</p>
+</footer>
+
+</body>
+</html>
+<title></title>

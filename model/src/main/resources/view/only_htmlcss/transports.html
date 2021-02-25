@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        .buttonAdd {
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 10pt;
+            padding: 12px 25px;
+            text-align: center;
+            font-size: 15px;
+            cursor: pointer;
+            float: left;
+        }
+
+        div {
+            width: 200px;
+            height: 60px;
+        }
+
+        .aEdit {
+            color: green;
+            cursor: pointer;
+        }
+
+        .aDelete {
+            color: darkred;
+            cursor: pointer;
+        }
+
+        table {
+            border: 5px solid dimgray;
+            border-radius: 12px;
+        }
+
+        th {
+            border: 3px solid dimgray;
+            background-color: darkgoldenrod;
+            font-size: 25px;
+            padding: 6px;
+        }
+
+        td {
+            border: 1px solid dimgray;
+            text-align: center;
+            font-size: 18px;
+            padding: 6px;
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <title>Transports</title>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="startpage.html" title="Back to start page">Start page</a> |
+        <a href="drivers.html" title="go to drivers">Drivers</a>
+    </nav>
+
+
+    <h1>Transports
+    </h1>
+
+    <div>
+        <a href="transport_edit.html">
+            <button class="buttonAdd" type="submit">Add new transport</button>
+        </a>
+    </div>
+
+</header>
+
+<section>
+    <table>
+        <thead>
+        <tr>
+            <th>Type</th>
+            <th>Driver</th>
+            <th>FuelType</th>
+            <th>Capacity</th>
+            <th>Date of manufacture</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+            <td>Trolley</td>
+            <td>Artsiom Prokharau</td>
+            <td>Electric</td>
+            <td>87</td>
+            <td>12.02.2012</td>
+            <td>
+                <a class="aEdit" href="transport_edit.html">Edit</a>
+                <a class="aDelete" href="#">Delete</a>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>Bus</td>
+            <td>Dmitriy Ivanov</td>
+            <td>Gasoline</td>
+            <td>87</td>
+            <td>12.02.2020</td>
+            <td>
+                <a class="aEdit" href="transport_edit.html">Edit</a>
+                <a class="aDelete" href="#">Delete</a>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>Tram</td>
+            <td>Sergey Pohanenko</td>
+            <td>Electric</td>
+            <td>52</td>
+            <td>12.02.2015</td>
+            <td>
+                <a class="aEdit" href="transport_edit.html">Edit</a>
+                <a class="aDelete" href="#">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<footer>
+    <hr/>
+    <p>&copy;Created by Artsiom Prokharau 2021</p>
+</footer>
+
+</body>
+</html>
+<title></title>

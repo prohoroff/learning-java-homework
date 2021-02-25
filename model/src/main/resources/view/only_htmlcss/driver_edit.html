@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        div {
+            width: 500px;
+            height: 50px;
+        }
+
+        .buttonSave {
+            background-color: olivedrab;
+            border-radius: 10px;
+            color: white;
+            padding: 12px 25px;
+            text-align: center;
+            font-size: 10px;
+            cursor: pointer;
+            float: right;
+        }
+
+        .buttonSave:hover {
+            background-color: #4CAF50;
+        }
+
+        .buttonBack {
+            background-color: crimson;
+            border-radius: 10px;
+            color: black;
+            padding: 12px 25px;
+            text-align: center;
+            font-size: 10px;
+            cursor: pointer;
+            float: left;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+</head>
+<body>
+
+<header>
+    <h1>Driver</h1>
+</header>
+
+<form>
+    <fieldset>
+
+        <div>
+            <label for="number">Personnel Number</label>
+            <input id="number" name="personnelNumber" type="number">
+        </div>
+
+        <div>
+            <label for="driver">Full Name</label>
+            <input id="driver" name="fullName" type="text">
+        </div>
+
+        <div>
+            <label for="address">Address</label>
+            <input id="address" name="address" type="text">
+        </div>
+
+        <div>
+            <label for="date">Birth Date</label>
+            <input id="date" name="date" type="date"/>
+        </div>
+
+        <div>
+            <form action="drivers.html">
+                <button class="buttonSave" type="submit" onclick="alert('Driver create!!')">Save</button>
+            </form>
+
+            <a href="drivers.html">
+                <button class="buttonBack" type="button">Back</button>
+            </a>
+        </div>
+
+    </fieldset>
+</form>
+
+<footer>
+    <hr/>
+    <p>&copy; Created by Artsiom Prokharau 2021</p>
+</footer>
+</body>
+</html>

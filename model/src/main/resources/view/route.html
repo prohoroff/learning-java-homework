@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+        section {
+            padding-top: 10px;
+        }
+
+        .row {
+            padding-top: 15px;
+        }
+
+        .table {
+            text-align: center;
+        }
+
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style_navbar.css"/>
+
+    <title>Route</title>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light  bg-navbar">
+        <div class="container-xl">
+            <a class="navbar-brand" href="startpage.html">
+                <img src="img/public-transport.svg" alt="" width="30" height="24" class="d-inline-block align-top">
+                Home
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="transport.html">Transport</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control-sm me-sm-2" name="start" type="number" aria-label="Search">
+                    <input class="form-control-sm me-sm-2" name="end" type="number" aria-label="Search">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            Search Option
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <button class="dropdown-item" type="submit">Number route</button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="submit">Length</button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="submit">Lap time</button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="submit">Number of stops</button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="submit">Number of vehicles</button>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<section>
+    <div class="container-xl">
+        <div class="row justify-content-center">
+            <div class="col-sm-2">
+                <h1 class="text-decoration-underline">Route</h1>
+            </div>
+            <div class="col-sm-4 my-auto">
+                <a href="route_edit.html">
+                    <button type="button" class="btn btn-success btn-group"><i class="bi bi-plus-square"></i><span
+                            class="d-none d-md-inline">&nbsp;New Route</span></button>
+                </a>
+            </div>
+            <div class="col-sm-6"></div>
+        </div>
+        <div class="row">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">Number route</th>
+                    <th scope="col">Length (km)</th>
+                    <th scope="col">Lap time (min)</th>
+                    <th scope="col">Number of stops</th>
+                    <th scope="col">Number of vehicles</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>5.3</td>
+                    <td>48</td>
+                    <td>14</td>
+                    <td>
+                        <a href="transport.html" class="link-info">5</a>
+                    </td>
+                    <td>
+                        <a href="route_edit.html">
+                            <button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-pencil"></i><span
+                                    class="d-none d-md-inline">&nbsp;Edit</span></button>
+                        </a>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#delete"
+                                class="btn btn-danger btn-sm"><i class="bi bi-trash"></i><span
+                                class="d-none d-md-inline">&nbspDelete</span></button>
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>2</td>
+                    <td>2.7</td>
+                    <td>24</td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td>
+                        <a href="route_edit.html">
+                            <button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-pencil"></i><span
+                                    class="d-none d-md-inline">&nbspEdit</span></button>
+                        </a>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#delete"
+                                class="btn btn-danger btn-sm"><i class="bi bi-trash"></i><span
+                                class="d-none d-md-inline">&nbspDelete</span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>3.4</td>
+                    <td>36</td>
+                    <td>18</td>
+                    <td>2</td>
+                    <td>
+                        <a href="route_edit.html">
+                            <button type="button" class="btn btn-secondary btn-sm"><i class="bi bi-pencil"></i><span
+                                    class="d-none d-md-inline">&nbsp;Edit</span></button>
+                        </a>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#delete"
+                                class="btn btn-danger btn-sm"><i class="bi bi-trash"></i><span
+                                class="d-none d-md-inline">&nbspDelete</span></button>
+
+                        <!--  Modal button delete                      -->
+                        <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title" id="exampleModalLabel">Delete Route</h6>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h4>Are you sure you want to delete information about this route? </h4>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                                        </button>
+                                        <a href="route.html">
+                                            <button type="button" class="btn btn-danger">Delete</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <hr/>
+    <p class="container-xl">&copy;Created by Artsiom Prokharau 2021</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+</body>
+</html>

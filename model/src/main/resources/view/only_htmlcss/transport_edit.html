@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        div {
+            width: 500px;
+            height: 50px;
+        }
+
+        .buttonSave {
+            background-color: olivedrab;
+            border-radius: 10px;
+            color: white;
+            padding: 12px 25px;
+            text-align: center;
+            font-size: 10px;
+            cursor: pointer;
+            float: right;
+        }
+
+        .buttonSave:hover {
+            background-color: #4CAF50;
+        }
+
+        .buttonBack {
+            background-color: crimson;
+            border-radius: 10px;
+            color: black;
+            padding: 12px 25px;
+            text-align: center;
+            font-size: 10px;
+            cursor: pointer;
+            float: left;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+</head>
+<body>
+
+<header>
+    <h1>Transport</h1>
+</header>
+
+<form>
+    <fieldset>
+
+        <div>
+            <label for="type">Transport Type</label>
+            <select id="type" name="transportType">
+                <option value="Tram">Tram</option>
+                <option value="Trolley">Trolley</option>
+                <option value="Bus">Bus</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="driver">Driver</label>
+            <input id="driver" name="driver" type="text">
+        </div>
+
+        <div>
+            <label for="fuelType">Fuel Type</label>
+            <select id="fuelType" name="fuel">
+                <option value="Gasoline">Gasoline</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Gas">Gas</option>
+                <option value="Electric">Electric</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="capacity">Capacity</label>
+            <input id="capacity" name="capacity" type="number">
+        </div>
+
+        <div>
+            <label for="date">Date of manufacture</label>
+            <input id="date" name="date" type="date"/>
+        </div>
+
+        <div>
+            <form action="transports.html">
+                <button class="buttonSave" type="submit" onclick="alert('Transport create!!')">Save</button>
+            </form>
+
+
+            <a href="transports.html">
+                <button class="buttonBack" type="button">Back</button>
+            </a>
+
+        </div>
+
+    </fieldset>
+</form>
+
+<footer>
+    <hr/>
+    <p>&copy; Created by Artsiom Prokharau 2021</p>
+</footer>
+</body>
+</html>

@@ -20,13 +20,14 @@ public class RouteDaoImpl implements RouteDao {
 
     private JdbcTemplate jdbcTemplate;
     private SimpleJdbcInsert simpleJdbcInsert;
-    private RowMapper<Route> rowMapper = new BeanPropertyRowMapper<>(Route.class);
+    private RowMapper<Route> rowMapper;
 
     public RouteDaoImpl(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
 
     public void init() {
+        rowMapper = new BeanPropertyRowMapper<>(Route.class);
         simpleJdbcInsert = new SimpleJdbcInsert(jdbcTemplate)
                 .withTableName("ROUTE")
                 .usingGeneratedKeyColumns("ROUTE_ID");
@@ -61,7 +62,6 @@ public class RouteDaoImpl implements RouteDao {
     @Override
     public Integer update(Route model) {
         String request = "UPDATE ROUTE SET NUMBER_ROUTE = ?,LENGTH = ?,LAP_TIME = ?,NUMBER_OF_STOPS= ? WHERE NUMBER_ROUTE = ?";
-//        SqlParameterSource sqlParameterSource = new MapSqlParameterSource().addValues(mapRoute(model));
         int update = jdbcTemplate.update(request, model.getNumberRoute(), model.getLength(), model.getLapTime(), model.getNumberOfStops(), model.getNumberRoute());
 //        LOGGER.info("Удаление по id = {} и количество удаленных  данных = {}", model.getRouteId()id, update);
         return update;

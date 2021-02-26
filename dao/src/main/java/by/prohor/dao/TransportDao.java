@@ -9,4 +9,7 @@ import by.prohor.model.Transport;
 
 
 public interface TransportDao extends TransportParkDao<Transport> {
+
+    Transport findById(Integer transportId);
+
 }
